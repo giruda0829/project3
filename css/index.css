@@ -119,24 +119,6 @@ ol, ul, li {
   }
 }
 
-h2 {
-  padding: 1rem 0;
-  font-size: 2.4rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, right top, from(#285a91), to(#1f9cfd));
-  background: linear-gradient(left, #285a91, #1f9cfd);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-h2:hover {
-  padding-left: 1.5rem;
-}
-
 .u-margin-right-small {
   margin-right: 1rem;
 }
@@ -509,7 +491,7 @@ main {
   }
 }
 
-#section-start {
+.section-start {
   max-width: 1024px;
   margin: 0 auto;
   position: relative;
@@ -520,18 +502,18 @@ main {
 }
 
 @media screen and (min-width: 701px) and (max-width: 899px) {
-  #section-start {
+  .section-start {
     height: 1200px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #section-start {
+  .section-start {
     height: 900px;
   }
 }
 
-#section-start::before {
+.section-start::before {
   content: '';
   display: block;
   position: absolute;
@@ -545,17 +527,17 @@ main {
   z-index: -1;
 }
 
-#section-start img.bg {
+.section-start img.bg {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-#section-start #section-start-words {
+.section-start #section-start-words {
   padding-top: 50px;
 }
 
-#section-start #section-start-words h6 {
+.section-start #section-start-words h6 {
   color: #ff8f27;
   font-size: 2rem;
   padding-bottom: 30px;
@@ -564,18 +546,18 @@ main {
 }
 
 @media screen and (min-width: 701px) and (max-width: 899px) {
-  #section-start #section-start-words h6 {
+  .section-start #section-start-words h6 {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #section-start #section-start-words h6 {
+  .section-start #section-start-words h6 {
     font-size: 1rem;
   }
 }
 
-#section-start #section-start-words-tit {
+.section-start #section-start-words-tit {
   color: #fff;
   font-size: 3.5rem;
   font-weight: 700;
@@ -603,18 +585,18 @@ main {
 }
 
 @media screen and (min-width: 701px) and (max-width: 899px) {
-  #section-start #section-start-words-tit {
+  .section-start #section-start-words-tit {
     font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #section-start #section-start-words-tit {
+  .section-start #section-start-words-tit {
     font-size: 1.4rem;
   }
 }
 
-#section-start #section-start-words-tit .big {
+.section-start #section-start-words-tit .big {
   padding-left: 15px;
   font-size: 5rem;
   -webkit-transition: all .5s;
@@ -622,23 +604,23 @@ main {
 }
 
 @media screen and (min-width: 701px) and (max-width: 899px) {
-  #section-start #section-start-words-tit .big {
+  .section-start #section-start-words-tit .big {
     font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #section-start #section-start-words-tit .big {
+  .section-start #section-start-words-tit .big {
     font-size: 1.7rem;
   }
 }
 
-#section-start #section-start-words img {
+.section-start #section-start-words img {
   padding-top: 50px;
   width: 100%;
 }
 
-#section-start #section-start-words p {
+.section-start #section-start-words p {
   color: #fff;
   font-size: 2.2rem;
   padding: 100px 160px;
@@ -648,13 +630,13 @@ main {
 }
 
 @media screen and (min-width: 701px) and (max-width: 899px) {
-  #section-start #section-start-words p {
+  .section-start #section-start-words p {
     padding: 100px 3%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #section-start #section-start-words p {
+  .section-start #section-start-words p {
     padding: 60px 15%;
     font-size: 1.5rem;
   }
