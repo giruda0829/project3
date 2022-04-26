@@ -1183,3 +1183,16 @@ footer #copyright .logo-image img {
 footer #copyright .logo-image img + img {
   margin-top: 2rem;
 }
+
+footer #validator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+}
+
+footer #validator a {
+  width: 100%;
+  margin-left: 15px;
+  margin-top: 20px;
+}
