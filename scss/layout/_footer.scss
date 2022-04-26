@@ -2,56 +2,60 @@ footer {
 	color: $color-gray-dark;
 	background-color: $color-white;
 	padding: 5rem 0;
+	font-family: 'Nanum Gothic', sans-serif;
+	line-height: 1.8;
 
 	@include mq("small-screen-2") {
 		padding: 3rem 0;
 	}
+
 	@include mq("small-screen-3") {
 		padding: 3rem 0;
 	}
 
 	@include clearfix();
 
-	#meual-list{
+	#meual-list {
 		width: 30%;
 		font-size: 1.7rem;
 		float: right;
-		line-height: 1.8;
-		font-family: 'Nanum Godik', sans-serif;
 		padding: 5rem 0;
 		transition: all .5s;
 
 		@include mq("small-screen-2") {
 			width: 100%;
 		}
+
 		@include mq("small-screen-3") {
 			width: 100%;
 		}
 
-		ul{
+		ul {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 			transition: all .5s;
-			
-		@include mq("small-screen-2") {
-			justify-content: flex-start;
-		}
-		@include mq("small-screen-3") {
-			justify-content: flex-start;
-		}
+
+			@include mq("small-screen-2") {
+				justify-content: flex-start;
+			}
+
+			@include mq("small-screen-3") {
+				justify-content: flex-start;
+			}
 		}
 
-		li{
+		li {
 			width: 150px;
 		}
 
-		a{
+		a {
 			color: #111;
 			text-decoration: none;
 			text-align: left;
 		}
-		a:hover{
+
+		a:hover {
 			text-decoration: underline;
 		}
 
@@ -61,8 +65,6 @@ footer {
 		width: 60%;
 		font-size: 1.6rem;
 		float: left;
-		line-height: 1.8;
-		font-family: 'Nanum Godik', sans-serif;
 		transition: all .5s;
 
 		@include mq('small-screen-2') {
@@ -96,5 +98,4 @@ footer {
 			}
 		}
 	}
-
 }

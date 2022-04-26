@@ -7,11 +7,12 @@ header {
     @include mq("small-screen-2") {
         height: 100vh;
     }
+
     @include mq("small-screen-3") {
         height: 100vh;
     }
 
-    .top {
+    .logo {
         width: 100%;
         height: 60px;
         background: #111;
@@ -36,7 +37,7 @@ header {
         transition: all .5s;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
 
         @include mq("small-screen-2") {
             width: 290%;
@@ -49,7 +50,7 @@ header {
         }
     }
 
-    #logo {
+    #title {
         position: absolute;
         left: 50%;
         top: 40%;
@@ -64,14 +65,14 @@ header {
 
         @include mq("small-screen-2") {
             width: 800px;
-           height: 600px;
-           top: 30%;
+            height: 600px;
+            top: 30%;
         }
 
         @include mq("small-screen-3") {
-           width: 350px;
-           height: 220px;
-           top: 30%;
+            width: 350px;
+            height: 220px;
+            top: 30%;
         }
     }
 
@@ -87,11 +88,11 @@ header {
         transition: all .5s;
 
         @include mq("small-screen-2") {
-           bottom: 20%;
+            bottom: 20%;
         }
 
         @include mq("small-screen-3") {
-           bottom: 15%;
+            bottom: 15%;
         }
 
         &-main {
@@ -105,7 +106,7 @@ header {
             animation-fill-mode: backwards;
         }
 
-        &-sub {
+        &-btn {
             margin: 6rem 0;
 
             a {
@@ -126,17 +127,15 @@ header {
                 animation-delay: 3.5s;
                 animation-fill-mode: backwards;
                 transition: all .5s;
-        
+
                 @include mq("small-screen-3") {
                     width: 330px;
                 }
             }
+
             & a.active {
                 background-image: linear-gradient(135deg, #0a83e6, #51c8e3, #e68a0a);
             }
         }
     }
-
-
-
 }

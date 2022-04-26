@@ -335,7 +335,7 @@ header {
   }
 }
 
-header .top {
+header .logo {
   width: 100%;
   height: 60px;
   background: #111;
@@ -343,11 +343,11 @@ header .top {
   z-index: 100;
 }
 
-header .top a {
+header .logo a {
   line-height: 60px;
 }
 
-header .top .ffx_logo {
+header .logo .ffx_logo {
   height: 50%;
   margin-top: 20px;
 }
@@ -379,7 +379,7 @@ header #trailer {
   }
 }
 
-header #logo {
+header #title {
   position: absolute;
   left: 50%;
   top: 40%;
@@ -396,7 +396,7 @@ header #logo {
 }
 
 @media screen and (min-width: 701px) and (max-width: 899px) {
-  header #logo {
+  header #title {
     width: 800px;
     height: 600px;
     top: 30%;
@@ -404,7 +404,7 @@ header #logo {
 }
 
 @media screen and (max-width: 700px) {
-  header #logo {
+  header #title {
     width: 350px;
     height: 220px;
     top: 30%;
@@ -451,11 +451,11 @@ header #header-text-main {
           animation-fill-mode: backwards;
 }
 
-header #header-text-sub {
+header #header-text-btn {
   margin: 6rem 0;
 }
 
-header #header-text-sub a {
+header #header-text-btn a {
   margin: 2rem 0;
   font-size: 2.2rem;
   text-align: center;
@@ -480,12 +480,12 @@ header #header-text-sub a {
 }
 
 @media screen and (max-width: 700px) {
-  header #header-text-sub a {
+  header #header-text-btn a {
     width: 330px;
   }
 }
 
-header #header-text-sub a.active {
+header #header-text-btn a.active {
   background-image: linear-gradient(135deg, #0a83e6, #51c8e3, #e68a0a);
 }
 
@@ -793,7 +793,7 @@ main {
 }
 
 #section-contents-news .btn:hover {
-  background-image: linear-gradient(10deg, #0a83e6, #51c8e3 50%, #e68a0a);
+  background-image: linear-gradient(10deg, #0a83e6, #51c8e3, #e68a0a);
 }
 
 #section-contents-list {
@@ -1069,6 +1069,8 @@ footer {
   color: #474747;
   background-color: #fff;
   padding: 5rem 0;
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.8;
 }
 
 @media screen and (min-width: 701px) and (max-width: 899px) {
@@ -1093,8 +1095,6 @@ footer #meual-list {
   width: 30%;
   font-size: 1.7rem;
   float: right;
-  line-height: 1.8;
-  font-family: 'Nanum Godik', sans-serif;
   padding: 5rem 0;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -1159,8 +1159,6 @@ footer #copyright {
   width: 60%;
   font-size: 1.6rem;
   float: left;
-  line-height: 1.8;
-  font-family: 'Nanum Godik', sans-serif;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
