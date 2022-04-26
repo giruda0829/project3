@@ -2,6 +2,14 @@ header {
     width: 100%;
     height: 120vh;
     position: relative;
+    transition: all .5s;
+
+    @include mq("small-screen-2") {
+        height: 100vh;
+    }
+    @include mq("small-screen-3") {
+        height: 100vh;
+    }
 
     .top {
         width: 100%;
@@ -25,29 +33,66 @@ header {
         height: 120%;
         position: fixed;
         z-index: -9999;
+        transition: all .5s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        @include mq("small-screen-2") {
+            width: 290%;
+            height: 100%;
+        }
+
+        @include mq("small-screen-3") {
+            width: 500%;
+            height: 100%;
+        }
     }
 
     #logo {
         position: absolute;
         left: 50%;
-        top: 45%;
+        top: 40%;
         transform: translate(-50%, -50%);
-        background-image: url(../../image/visual_logo.png);
+        background-image: url(https://res.cloudinary.com/giruda1113/image/upload/v1650951495/web%20portfolio/visual_logo_bpnqzq.png);
         background-position: center 20%;
         background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
+        background-size: cover;
+        width: 800px;
+        height: 600px;
+        transition: all .5s;
+
+        @include mq("small-screen-2") {
+            width: 800px;
+           height: 600px;
+           top: 30%;
+        }
+
+        @include mq("small-screen-3") {
+           width: 350px;
+           height: 220px;
+           top: 30%;
+        }
     }
 
     #header-text {
         position: absolute;
         left: 50%;
-        bottom: 3%;
+        bottom: 1%;
         color: $color-white;
         letter-spacing: -.1rem;
         font-weight: 700;
         transform: translateX(-50%);
         text-align: center;
+        transition: all .5s;
+
+        @include mq("small-screen-2") {
+           bottom: 20%;
+        }
+
+        @include mq("small-screen-3") {
+           bottom: 15%;
+        }
 
         &-main {
             font-size: 5rem;
@@ -71,17 +116,23 @@ header {
                 width: 400px;
                 height: 50px;
                 line-height: 50px;
-                border: 1px solid #fff;
+                border-width: 1px;
+                border-style: solid;
+                border-color: $color-white;
                 color: #fff;
 
                 animation-name: moveInLeft;
                 animation-duration: 2s;
                 animation-delay: 3.5s;
                 animation-fill-mode: backwards;
+                transition: all .5s;
+        
+                @include mq("small-screen-3") {
+                    width: 330px;
+                }
             }
-
             & a.active {
-                background-color: linear-gradient(10deg, #0a83e6, #51c8e3 50%, #e68a0a);
+                background-image: linear-gradient(135deg, #0a83e6, #51c8e3, #e68a0a);
             }
         }
     }

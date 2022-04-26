@@ -4,6 +4,11 @@ main {
 	background: rgba(12, 19, 30, 0.85);
 	text-align: center;
 	padding: 50px 0;
+	transition: all .5s;
+
+	@include mq("small-screen-3") {
+		padding: 0;
+	}
 }
 
 #section-start {
@@ -12,6 +17,15 @@ main {
 	position: relative;
 	height: 1400px;
 	z-index: 10;
+	transition: all .5s;
+
+	@include mq("small-screen-2") {
+		height: 1200px;
+	}
+
+	@include mq("small-screen-3") {
+		height: 900px;
+	}
 
 	&::before {
 		content: '';
@@ -20,7 +34,7 @@ main {
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		background: url(../../image/con1_bg.jpg) no-repeat center center/cover;
+		background: url(https://res.cloudinary.com/giruda1113/image/upload/v1650951494/web%20portfolio/con1_bg_hdl3cb.jpg) no-repeat center center/cover;
 		height: 1500px;
 		width: 100%;
 		z-index: -1;
@@ -39,6 +53,15 @@ main {
 			color: #ff8f27;
 			font-size: 2rem;
 			padding-bottom: 30px;
+			transition: all .5s;
+
+			@include mq("small-screen-2") {
+				font-size: 1.5rem;
+			}
+
+			@include mq("small-screen-3") {
+				font-size: 1rem;
+			}
 		}
 
 		&-tit {
@@ -50,6 +73,15 @@ main {
 			justify-content: center;
 			align-items: flex-end;
 			padding-bottom: 20px;
+			transition: all .5s;
+
+			@include mq("small-screen-2") {
+				font-size: 2.5rem;
+			}
+
+			@include mq("small-screen-3") {
+				font-size: 1.4rem;
+			}
 
 			animation-name: moveInRight;
 			animation-duration: 2s;
@@ -59,11 +91,21 @@ main {
 			.big {
 				padding-left: 15px;
 				font-size: 5rem;
+				transition: all .5s;
+
+				@include mq("small-screen-2") {
+					font-size: 3.5rem;
+				}
+
+				@include mq("small-screen-3") {
+					font-size: 1.7rem;
+				}
 			}
 		}
 
 		img {
 			padding-top: 50px;
+			width: 100%;
 		}
 
 		p {
@@ -71,6 +113,16 @@ main {
 			font-size: 2.2rem;
 			padding: 100px 160px;
 			line-height: 1.8;
+			transition: all .5s;
+
+			@include mq("small-screen-2") {
+				padding: 100px 3%;
+			}
+
+			@include mq("small-screen-3") {
+				padding: 60px 15%;
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
@@ -123,12 +175,22 @@ main {
 		ul {
 			display: flex;
 			justify-content: center;
+			flex-wrap: wrap;
 		}
 
 		li {
 			width: 22%;
 			margin: 10px;
 			position: relative;
+			transition: all .5s;
+
+			@include mq("small-screen-2") {
+				width: 45%;
+			}
+
+			@include mq("small-screen-3") {
+				width: 100%;
+			}
 		}
 
 		a {
@@ -176,12 +238,13 @@ main {
 		}
 
 		.btn {
-			background-color: $color-gray-dark;
+			background-image: linear-gradient($color-gray-dark,$color-gray-dark);
 			color: $color-white;
 			padding: 10px 0;
+			transition: all .5s;
 
 			&:hover {
-				background-color: linear-gradient(10deg, #0a83e6, #51c8e3 50%, #e68a0a);
+				background-image: linear-gradient(10deg, #0a83e6, #51c8e3 50%, #e68a0a);
 			}
 		}
 	}
@@ -193,6 +256,16 @@ main {
 		z-index: 10;
 		display: flex;
 		margin-top: 100px;
+		transition: all .5s;
+
+		@include mq("small-screen-2") {
+			padding: 40px 80px;
+		}
+
+		@include mq("small-screen-3") {
+			padding: 20px 50px;
+			flex-wrap: wrap;
+		}
 
 		&::after,
 		&::before {
@@ -219,6 +292,17 @@ main {
 			text-align: left;
 			height: 300px;
 			margin-right: 80px;
+			transition: all .5s;
+
+			@include mq("small-screen-2") {
+				height: 400px;
+				margin-right: 50px;
+			}
+
+			@include mq("small-screen-3") {
+				height: 100%;
+				margin-right: 0;
+			}
 		}
 
 		li {
@@ -247,6 +331,15 @@ main {
 	position: relative;
 	padding: 300px 0;
 	z-index: 10;
+	transition: all .5s;
+
+	@include mq("small-screen-2") {
+		padding: 300px 20px;
+	}
+
+	@include mq("small-screen-3") {
+		padding: 300px 20px;
+	}
 
 	&-events {
 		&>.tit {
@@ -259,12 +352,20 @@ main {
 		ul {
 			display: flex;
 			justify-content: space-between;
+			flex-wrap: wrap;
 		}
 
 		li {
-			width: 330px;
+			width: calc(100%/3.2);
+			max-width: 330px;
 			position: relative;
 			overflow: hidden;
+			transition: all .5s;
+
+			@include mq("small-screen-3") {
+				width: 100%;
+				margin: 0 auto;
+			}
 
 			&:first-child::before {
 				height: 100%;
@@ -274,8 +375,8 @@ main {
 				top: 0;
 				left: 0;
 				z-index: -1;
-				background: url(../../image/bnr_com1.jpg) no-repeat center center;
-			transition: all .5s;
+				background: url(https://res.cloudinary.com/giruda1113/image/upload/v1650951494/web%20portfolio/bnr_com1_t4vj9v.jpg) no-repeat center center;
+				transition: all .5s;
 			}
 
 			&:nth-child(2)::before {
@@ -286,7 +387,7 @@ main {
 				top: 0;
 				left: 0;
 				z-index: -1;
-				background: url(../../image/bnr_com2.jpg) no-repeat center center;
+				background: url(https://res.cloudinary.com/giruda1113/image/upload/v1650951494/web%20portfolio/bnr_com2_xft3vg.jpg) no-repeat center center;
 				transition: all .5s;
 			}
 
@@ -298,7 +399,7 @@ main {
 				top: 0;
 				left: 0;
 				z-index: -1;
-				background: url(../../image/bnr_com3.jpg) no-repeat center center;
+				background: url(https://res.cloudinary.com/giruda1113/image/upload/v1650951494/web%20portfolio/bnr_com3_ok4mk2.jpg) no-repeat center center;
 				transition: all .5s;
 			}
 
@@ -344,12 +445,19 @@ main {
 			line-height: 100px;
 			letter-spacing: -.08em;
 			display: block;
+			width: 100%;
+			transition: all .5s;
+
+			@include mq("small-screen-3") {
+				font-size: 16px;
+			}
 		}
 
 		li {
 			position: relative;
 			height: 100px;
-			width: 1020px;
+			width: 100%;
+			max-width: 1020px;
 			overflow: hidden;
 		}
 
@@ -361,7 +469,7 @@ main {
 			top: 0;
 			left: 0;
 			z-index: -1;
-			background: url(../../image/bnr_com4.jpg) no-repeat center center;
+			background: url(https://res.cloudinary.com/giruda1113/image/upload/v1650951494/web%20portfolio/bnr_com4_wnstze.jpg) no-repeat center center;
 			transition: all .5s;
 		}
 	}
