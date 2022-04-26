@@ -11,7 +11,7 @@ main {
 	}
 }
 
-.section-start {
+#section-start {
 	max-width: 1024px;
 	margin: 0 auto;
 	position: relative;
@@ -64,7 +64,7 @@ main {
 			}
 		}
 
-		&-tit {
+		.section-start-words-tit {
 			color: $color-white;
 			font-size: 3.5rem;
 			font-weight: 700;
