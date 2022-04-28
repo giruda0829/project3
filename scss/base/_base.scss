@@ -47,7 +47,7 @@ body {
 
 .inner {
     max-width: 1920px;
-    padding: 0 25rem;
+    padding: 0 18rem;
     transition: padding .5s;
 
     @include mq('small-screen-2') {
