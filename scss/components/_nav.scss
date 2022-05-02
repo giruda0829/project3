@@ -3,32 +3,30 @@
 		display: none;
 	}
 	&-button {
-		background-color: #c4e4ff38;
 		width: 7rem;
 		height: 6rem;
 		position: fixed;
-		top: 7rem;
-		right: 8rem;
+		top:0;
+		right: 3rem;
 		z-index: 2000;
 		cursor: pointer;
 		border-radius: 2px;
-		box-shadow: 0 1rem 1rem rgba(#000, 0.1);
-		text-align: center;
 	}
 	&-bg {
-		background-image: radial-gradient(#0a83e6, #51c8e3, #e68a0a);
+		background: url(https://res.cloudinary.com/giruda1113/image/upload/v1650951773/web%20portfolio/project3/visual_bg_wuyoub.jpg) no-repeat top left /cover;
 		width: 7rem;
 		height: 6rem;
 		position: fixed;
-		top: 7rem;
-		right: 8rem;
+		top: 0;
+		right: 5rem;
 		z-index: 1000;
-		border-radius: 2px;
 		transition: all 0.8s;
-		opacity: .1;
+		opacity: 0;
 	}
 	&-checkbox:checked ~ &-bg {
-		transform: scale(80);
+		top: 25rem;
+		right: 100rem;
+		transform: scale(30);
 		opacity: 1;
 	}
 	&-icon {
@@ -52,7 +50,7 @@
 		&::after {
 			width: 3rem;
 			height: 2px;
-			background-color: #333;
+			background-color: #fff;
 			display: inline-block;
 		}
 	}

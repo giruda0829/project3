@@ -196,37 +196,34 @@ h2:hover {
 }
 
 .nav-button {
-  background-color: #c4e4ff38;
   width: 7rem;
   height: 6rem;
   position: fixed;
-  top: 7rem;
-  right: 8rem;
+  top: 0;
+  right: 3rem;
   z-index: 2000;
   cursor: pointer;
   border-radius: 2px;
-  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .nav-bg {
-  background-image: radial-gradient(#0a83e6, #51c8e3, #e68a0a);
+  background: url(https://res.cloudinary.com/giruda1113/image/upload/v1650951773/web%20portfolio/project3/visual_bg_wuyoub.jpg) no-repeat top left/cover;
   width: 7rem;
   height: 6rem;
   position: fixed;
-  top: 7rem;
-  right: 8rem;
+  top: 0;
+  right: 5rem;
   z-index: 1000;
-  border-radius: 2px;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  opacity: .1;
+  opacity: 0;
 }
 
 .nav-checkbox:checked ~ .nav-bg {
-  -webkit-transform: scale(80);
-          transform: scale(80);
+  top: 25rem;
+  right: 100rem;
+  -webkit-transform: scale(30);
+          transform: scale(30);
   opacity: 1;
 }
 
@@ -254,7 +251,7 @@ h2:hover {
 .nav-icon, .nav-icon::before, .nav-icon::after {
   width: 3rem;
   height: 2px;
-  background-color: #333;
+  background-color: #fff;
   display: inline-block;
 }
 
@@ -341,7 +338,7 @@ h2:hover {
 
 header {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   position: relative;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -522,7 +519,7 @@ header #header-text-btn a.active {
 main {
   background: rgba(12, 19, 30, 0.85);
   text-align: center;
-  padding: 50px 0;
+  padding: 5% 0;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
@@ -665,7 +662,7 @@ main {
 #section-start #section-start-words p {
   color: #fff;
   font-size: 2.2rem;
-  padding: 100px 160px;
+  padding: 100px 0;
   line-height: 1.8;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -763,7 +760,7 @@ main {
 #section-contents-news a {
   color: #111;
   font-size: 2rem;
-  padding: 10px 10px;
+  padding: 10px 0;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
@@ -785,6 +782,10 @@ main {
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+#section-contents-news a:hover .btn {
+  background-image: linear-gradient(10deg, #0a83e6, #51c8e3, #e68a0a);
+}
+
 #section-contents-news .tit {
   padding: 40px 0 15px;
   font-size: 3rem;
@@ -793,13 +794,13 @@ main {
 
 #section-contents-news .txt {
   margin: 20px 0;
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 400;
   font-family: 'Nanum Gothic', sans-serif;
   letter-spacing: -1px;
   line-height: 1.5;
   opacity: .5;
-  height: 140px;
+  height: 160px;
 }
 
 #section-contents-news .image {
@@ -814,10 +815,6 @@ main {
   padding: 10px 0;
   -webkit-transition: all .5s;
   transition: all .5s;
-}
-
-#section-contents-news .btn:hover {
-  background-image: linear-gradient(10deg, #0a83e6, #51c8e3, #e68a0a);
 }
 
 #section-contents-list {
